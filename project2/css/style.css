@@ -1,0 +1,201 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color:rgb(177 176 168);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 86%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+    border-radius: 10px;
+}
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin:15px 20px;
+}
+#logo img{
+    height:59px;
+    margin:3px 6px;
+}
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+    padding:5px;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 1px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../img/45.jpg') no-repeat center center/cover;
+    height: 399px;
+    width:100px;
+     top:0px;
+    left:0px; 
+    width: 100%;
+    z-index: -1;
+    opacity:1.89;
+}
+#home h1{
+    color:rgb(21, 231, 32);
+    text-align: center;
+    font-size: 55px;
+    /* bold */
+    /* background-color: rgb(88, 160, 255); */
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Playball', cursive;
+}
+/* Services Section */
+#service{
+    margin: -10px;
+    display: flex;
+    flex-direction:row;
+}
+#service .box{ 
+    /* display:flex; */
+    /* flex-direction: column; */
+    border: 2px solid rgb(42, 165, 52);
+    padding: 34px;
+    /* margin-left: 35px; */
+    margin:25px 5px;
+    /* margin:25px; */
+    border-radius: 28px;
+    background: #f4f6f7;
+    margin-bottom: 37px;
+    width:433px;
+
+}
+#service .box img{ 
+   height: 100px;
+    margin: auto;
+    display: block;
+ }
+ /* Clients Section */
+ #client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #client-section::before{
+    content: "";
+    position:absolute;
+    background: url('../img/food.png');
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.3;
+   }
+   .client-item{
+padding:10px;
+   }
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/wheat31.jpeg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    /* font-family: 'Bree Serif', serif; */
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 1px 20px;
+    border: 2px solid white;
+    background-color:rgb(247, 165, 136);
+    color:white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.btn:hover{
+    color:purple;
+    background-color: palegoldenrod;
+}
+.centre{
+    text-align: center;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(15, 14, 14);
+    color: white;
+    text-align: center;
+  }
